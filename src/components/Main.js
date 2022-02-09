@@ -6,7 +6,7 @@ const MainBox = () => {
   
   return (
   <div className='main'>
-    <p className='text'>CashToken</p>
+    <p className='text'>Login Test</p>
 
       {/* <div className='email'>
         <label> Email</label>
