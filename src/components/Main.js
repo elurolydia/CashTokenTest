@@ -5,9 +5,10 @@ import Button from './Button'
 const MainBox = () => {
   
   return (
-  <form className='main'>
+  <div className='main'>
+    <p className='text'>CashToken</p>
 
-      <div className='email'>
+      {/* <div className='email'>
         <label> Email</label>
         <br/>
         <input type='email'/>
@@ -18,9 +19,10 @@ const MainBox = () => {
         <br/>
         <input type='password'/>
       </div>
-      
+       */}
+
       <Button/>
-  </form>
+  </div>
   );
 }
 

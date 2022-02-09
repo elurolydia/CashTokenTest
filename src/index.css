@@ -11,19 +11,24 @@ body{
   background-color: black;
   margin: auto;
   position: relative;
-  top: 25vh;
-  height: 50vh;
-  width: 40%;
+  top: 0;
+  height: 60px;
+  width: 100%;
   color: white;
-  box-shadow: 0 3px 5px blue;
-  border-radius: 5px;
-  padding: 5%;
-  flex-direction: column;
-  justify-content: center;
+  /* box-shadow: 0 3px 5px blue; */
+  /* border-radius: 5px; */
+  /* padding: 5%; */
+  /* flex-direction: column; */
+  justify-content: space-between;
   align-items: center;
 }
 
-.email{
+.text{
+  font-size: 30px;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+/* .email{
   margin-bottom: 10px;
   box-sizing: border-box;
   width: 80%;
@@ -36,15 +41,16 @@ input{
   font-size: 20px;
   padding-left: 10px;
   border-radius: 5px;
-}
+} */
 
 button{
   box-sizing: border-box;
-  width: 80%;
-  height: 60px;
+  width: 10%;
+  height: 40px;
   font-size: 20px;
-  padding-left: 10px;
-  margin-top: 20px;
+  /* padding-left: 10px; */
+  margin-right: 20px;
+  /* margin-top: 20px; */
   background-color: blue;
   cursor: pointer;
   border-radius: 5px
