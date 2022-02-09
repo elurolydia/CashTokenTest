@@ -1,6 +1,7 @@
 import { useAuth0 } from '@auth0/auth0-react';
 import React from 'react';
 import Button from './Button'
+import ButtonLogout from './ButtonLogout';
 
 const MainBox = () => {
   
@@ -20,7 +21,7 @@ const MainBox = () => {
         <input type='password'/>
       </div>
        */}
-
+      <ButtonLogout/>
       <Button/>
   </div>
   );

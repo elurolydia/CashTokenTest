@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {Auth0Provider} from '@auth0/auth0-react';
+// import {useHistory} from 'react-router-dom'
 
 
 // if (process.env.NODE_ENV === "production"){
@@ -16,9 +17,9 @@ console.log (process.env.NODE_ENV)
 console.log('redirectUri: '+ window.location.origin + '/callback');
 ReactDOM.render(
     <Auth0Provider
-      domain='https://id-sandbox.cashtoken.africa/account/signin'
+      domain='id-sandbox.cashtoken.africa/oauth'
       clientId={clientId}
-      redirectUri={window.location.origin}>
+      redirectUri='http://localhost:3000/callback'>
       <App />
     </Auth0Provider>,
   document.getElementById('root')
