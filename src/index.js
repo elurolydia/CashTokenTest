@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -9,6 +9,7 @@ import {Auth0Provider} from '@auth0/auth0-react';
 // if (process.env.NODE_ENV === "production"){
 //   process.env.NODE_ENV = 'development';
 // }
+
 const domainUri = process.env.REACT_APP_AUTH0_DOMAIN;
 const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
@@ -18,8 +19,9 @@ console.log('redirectUri: '+ window.location.origin + '/callback');
 ReactDOM.render(
     <Auth0Provider
       domain='id-sandbox.cashtoken.africa/oauth'
-      clientId={clientId}
-      redirectUri='http://localhost:3000/callback'>
+      clientId='wprQYMZBqqx-dgszFUfQG'
+      redirectUri='http://localhost:3000/callback'
+      >
       <App />
     </Auth0Provider>,
   document.getElementById('root')
